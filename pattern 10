@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+class solution{
+public:
+void printsquare(int n){
+     int k;
+        for(int i=1;i<2*n;i++){
+            if(i>n){
+              k=2*n-i;  
+            }
+            else{
+                k=i;
+            }
+            for(int j=0;j<k;j++){
+                cout<<"* ";
+            }
+            cout<<endl;
+        }
+    }
+};
+//Driver Code Starts
+int main(){
+int t;
+cin>>t;
+while(t--){
+int n;
+cin>>n;
+solution ob;
+ob.printsquare(n);
+}
+return 0;
+}
+//Driver Code Ends
